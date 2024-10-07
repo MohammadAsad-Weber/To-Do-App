@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(239, 239, 239);
+}
+
+html,
+body {
+    height: 100vh;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #a2a4ff;
+}
+
+#container {
+    width: 325px;
+    padding: 30px 20px;
+
+    background-color: #384493;
+    border: none;
+    border-radius: 25px;
+    box-shadow: inset 3px -3px 10px rgba(0, 0, 0, 0.3), inset -3px 3px 10px rgba(255, 255, 255, 0.30);
+}
+
+#container #Intro {
+    text-align: center;
+}
+
+#Intro h1,
+#Intro h5 {
+    font-family: system-ui, -apple-system, sans-serif;
+    text-shadow: -2px 2px 4px #00004b;
+}
+
+#Intro h2 {
+    text-shadow: -3px 3px 1px #00004b;
+}
+
+#Intro h1 {
+    margin: 0;
+    color: rgb(0, 102, 255);
+    text-shadow: -2px 2px 4px rgb(0, 36, 90);
+}
+
+#Intro h5 {
+    margin: 3px 0 0 0;
+    color: rgb(255, 0, 217);
+    text-shadow: -2px 2px 4px rgb(169, 0, 144);
+
+}
+
+#container #InputArea {
+    position: relative;
+
+    padding: 7px 0 7px 15px;
+    margin-bottom: 25px;
+
+    background-color: rgb(230, 230, 230);
+    border: none;
+    border-radius: 25px;
+    box-shadow: -5px 8px 10px rgba(0, 0, 75, 0.5), inset -5px 5px 4px rgba(255, 255, 255, 0.9);
+}
+
+#InputArea input {
+    width: 80%;
+    font-size: 0.9em;
+    color: #000;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+#InputArea button {
+    height: 55px;
+    width: 55px;
+    font-size: 2em;
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+
+    background-color: #00004b;
+    border: none;
+    border-radius: 100%;
+    box-shadow: -3px 3px 5px rgba(0, 0, 75, 0.75), inset -2px 2px 4px rgba(255, 255, 255, 0.4);
+}
+
+#container #TaskArea {
+    max-height: 300px;
+    overflow: auto;
+
+    margin-top: 20px;
+
+    scrollbar-width: none;
+}
+
+#TaskArea > div {
+    font-size: 1.1em;
+    padding: 15px;
+    margin-bottom: 5px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #00004b;
+    border: none;
+    border-radius: 10px;
+}
+
+.done {
+    font-size: 1.1em;
+    text-decoration: line-through;
+    color: rgba(255, 255, 255, 0.5);
+
+    padding: 15px;
+    margin-bottom: 5px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #00004b76;
+    border: none;
+    border-radius: 10px;
+}
+
+#TaskArea i {
+    font-size: 1.5em;
+
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+
+}
+
+#TaskArea div:last-child,
+#TaskArea .done:last-child {
+    margin-bottom: 0;
+}
